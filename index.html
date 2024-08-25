@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFHL-APP 21BAI1398</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1 class="title">BFHL-APP 21BAI1398</h1>
+        <form id="jsonForm" class="form-container">
+            <div class="form-group">
+                <label for="jsonInput" class="label">JSON Input:</label>
+                <textarea id="jsonInput" rows="10" cols="50"
+                    placeholder='Enter valid JSON here, e.g., {"data": ["M", "1", "334", "4", "B", "Z", "a"]}'
+                    class="textarea"></textarea>
+            </div>
+            <div class="dropdown-container">
+                <label for="responseOptions" class="label">Select an option:</label>
+                <select id="responseOptions" class="dropdown">
+                    <option value="alphabets">Alphabets</option>
+                    <option value="numbers">Numbers</option>
+                    <option value="highestLowercase">Highest lowercase alphabet</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <p id="error" class="error"></p>
+        <div id="responseContainer" class="response-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
